@@ -1,0 +1,40 @@
+.button {
+    width: max-content;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    font-family: inherit;
+}
+
+.button:focus,
+.button:hover {
+    background-color: #000e81;
+}
+
+.button:active {
+    background-color: #000447;
+}
+
+.primary {
+    background-color: #2337e0;
+    color: #ffffff;
+}
+
+.secondary {
+    background-color: #f1efff;
+    color: #24244f;
+}
+
+.secondary:focus,
+.secondary:hover {
+    background-color: #bdc2ff;
+    color: #000000;
+}
+
+.secondary:active {
+    background-color: #3b129f;
+    color: #ffffff;
+}
