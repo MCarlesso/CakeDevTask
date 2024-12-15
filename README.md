@@ -2,9 +2,10 @@
 
 ## Instructions
 
-To run the dev server, run the following command in the terminal:
+To run the dev server, run the following commands in the terminal:
 
 ```
+npm install
 npm run dev
 ```
 
