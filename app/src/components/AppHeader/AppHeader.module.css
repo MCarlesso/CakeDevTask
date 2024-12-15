@@ -1,0 +1,10 @@
+.headerContainer {
+    display: flex;
+    /* Flexbox is probably overkill for one static img element, but will extend nicely for menus and responsive layouts */
+    justify-content: center;
+    align-items: center;
+    height: 41px;
+    width: 100%;
+    top: 0;
+    border-bottom: solid 1px var(--line-color);
+}
