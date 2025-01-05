@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Modal } from "@/components/Modal/Modal";
 import { LearningCarousel } from "@/components/VideoCarousel/VideoCarousel";
 import { learningResources } from "@/data/learningResources";
+import { CountWrapper } from "@/components/CountWrapper/CountWrapper";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -26,7 +27,7 @@ export default function Home() {
     };
 
     return (
-        <>
+        <CountWrapper>
             <Head>
                 <title>Cake Dev Task</title>
                 <meta name="description" content="Engineering Task for Cake Interview " />
@@ -56,6 +57,6 @@ export default function Home() {
                     <LearningCarousel carouselItems={learningResources} />
                 </main>
             </div>
-        </>
+        </CountWrapper>
     );
 }
