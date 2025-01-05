@@ -6,13 +6,9 @@
     --button-primary-hover: #383838;
     --button-secondary-hover: #f2f2f2;
 
-    display: grid;
-    grid-template-rows: 20px 1fr 20px;
     align-items: flex-start;
     justify-items: center;
     min-height: 100svh;
-    width: 50%;
-    margin: auto;
 
     font-family: var(--font-inter);
 }
@@ -33,6 +29,14 @@
     flex-direction: column;
     gap: 32px;
     grid-row-start: 2;
+    width: 100%;
+    padding: 20px;
+
+    @media only screen and (min-width: 768px) {
+        width: 85%;
+        margin: auto;
+        padding-bottom: 80px;
+    }
 }
 
 .main ol {
@@ -125,20 +129,6 @@ a.secondary {
 }
 
 @media (max-width: 600px) {
-    .page {
-        /* padding: 32px; */
-        width: 85%;
-        padding-bottom: 80px;
-    }
-
-    .main {
-        align-items: center;
-    }
-
-    .main ol {
-        text-align: center;
-    }
-
     .ctas {
         flex-direction: column;
     }

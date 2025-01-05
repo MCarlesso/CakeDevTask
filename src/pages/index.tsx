@@ -6,6 +6,8 @@ import { Toggle } from "@/components/Toggle/Toggle";
 import { Button } from "@/components/Button/Button";
 import { useState } from "react";
 import { Modal } from "@/components/Modal/Modal";
+import { LearningCarousel } from "@/components/VideoCarousel/VideoCarousel";
+import { learningResources } from "@/data/learningResources";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -31,7 +33,6 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* App Header */}
             <AppHeader />
             <div className={`${styles.page} ${inter.variable} `}>
                 <main className={styles.main}>
@@ -44,9 +45,7 @@ export default function Home() {
                             massa imperdiet aliquam.
                         </p>
                     </div>
-                    {/* Toggle */}
                     <Toggle />
-                    {/* Modal */}
                     <Button title="Open Modal" onClick={() => openModal()} variant="primary" />
                     <Modal
                         title={"Hello, I'm a modal"}
@@ -54,6 +53,7 @@ export default function Home() {
                         isModalOpen={isModalOpen}
                         onClose={closeModal}
                     />
+                    <LearningCarousel carouselItems={learningResources} />
                 </main>
             </div>
         </>
